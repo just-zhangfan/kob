@@ -10,19 +10,11 @@ import java.util.*;
 public class BotInfoController {
 
     @RequestMapping("getbotinfo/")
-    public List<Map<String, String>> getBotInfo() {
-        List<Map<String, String>> list = new LinkedList<>();
-        Map<String, String> bot1 = new HashMap<>();
-        bot1.put("a", "1");
-        bot1.put("b", "2");
+    public Map<String, String> getBotInfo() {
+        Map<String, String> map = new HashMap<>();
+        map.put("zhangsan", "1000");
+        map.put("lisi", "500");
 
-        Map<String, String> bot2 = new HashMap<>();
-        bot2.put("c", "3");
-        bot2.put("d", "4");
-
-        list.add(bot1);
-        list.add(bot2);
-        return list;
+        return map;
     }
-
 }
